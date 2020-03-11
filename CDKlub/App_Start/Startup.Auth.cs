@@ -54,9 +54,9 @@ namespace CDKlub
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "204883234110068",
+               appSecret: "ec0718e1d0f96e1fd262a7bde7888702");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
