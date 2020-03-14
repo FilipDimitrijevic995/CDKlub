@@ -1,13 +1,10 @@
-﻿using CDKlub.Dtos;
-using CDKlub.Models;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
+using CDKlub.Dtos;
+using CDKlub.Models;
 
-namespace CDKlub.Controllers.Api
+namespace Vidly.Controllers.Api
 {
     public class NewRentalsController : ApiController
     {
@@ -39,7 +36,6 @@ namespace CDKlub.Controllers.Api
                     Customer = customer,
                     Movie = movie,
                     DateRented = DateTime.Now
-
                 };
 
                 _context.Rentals.Add(rental);
@@ -48,7 +44,6 @@ namespace CDKlub.Controllers.Api
             _context.SaveChanges();
 
             return Ok();
-
         }
     }
 }
